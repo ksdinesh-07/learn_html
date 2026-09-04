@@ -1531,8 +1531,124 @@
             .png
             .svg
 
-            
+# HTML Colors
+    HTML itself provides the structure,while css color properties control how that content looks.
 
+    There are several ways to specify colors:
+        1.Color name
+        2.RGB
+        3.HRX
+        4.HSL
+        5.RGBA
+        6.HSLA
+
+    1.Color names
+        The simplest method is using a predefined color name.
+
+        example:
+
+            we can change the text color
+
+            <h2 style="color: blue;">
+                About Me
+            </h2>
+
+            we can also change the background
+
+            <p style="background-color: lightgray;">
+                I am learning HTML.
+            </p>
+
+    2.RGB Colors
+        RGB Stands for Red Green Blue.
+
+        Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+
+        This means that there are 256 x 256 x 256 = 16777216 possible colors.
+
+        <p style="color: rgb(255, 0, 0);">
+            This is red text.
+        </p>
+
+        here,
+            Red - 255
+            Green - 0
+            Blue - 0
+
+        For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255), and the other two (green and blue) are set to 0.
+
+        #Shades of gray:
+            Shads of gray are often defined using the equal values for all three parameters.
+
+            example
+                rgb(60,60,60)
+
+        3.HEX Colors
+            HEX means hexadecimal color notation.
+
+            It starts with # and normally contains six hexadecimal characters.
+
+            <p style="color: #ff0000;">
+                This is red text.
+            </p>
+
+            structure is #RRGGBB
+                RR-Red
+                GG-Green
+                BB-Blue
+
+            examples
+                #ff0000 -> Red
+                #00ff00 -> Green
+                #0000ff -> Blue
+                #000000 -> Black
+                #ffffff -> White
+
+            code:
+                <h1 style="color: #1e3a8a;">
+                    My Personal Profile
+                </h1>
+
+        4.HSL Colors
+            HSL means 
+                H -> Hue (degere on the color wheel from 0 - 360,0 is red,120 is green and 240 is blue).
+
+                S -> Saturation (intensity, 0 means shade of gray,and 100 is full color)  is percentage value %.
+
+                L -> Lightness (0% is black and 100% is white)  is percentage value %
+                
+            <p style="color: hsl(0, 100%, 50%);">
+                This is red text.
+            </p>
+        
+            <h2 style="color: hsl(120, 60%, 30%)">
+                My Skills
+            </h2>
+
+        5.Transparency with RGBA
+            RGBA adds an Alpha value to RGB.
+
+            Alpha controls Transparency
+
+                R -> Red
+                G -> Green
+                B -> Blue
+                A -> Alphs
+
+            0 - completely transparent 
+            1 - completely opaque
+
+            example:
+
+                rgba(0, 0, 255, 0) -> invisible
+
+                rgba(0, 0, 255, 0.5) -> 50% transparent
+
+                rgba(0,0,255,1) -> fully visible
+
+            <p style="background-color: rgba(0, 0, 255, 0.5);">
+                Semi-transparent blue background.
+            </p>
 
 
 
